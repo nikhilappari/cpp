@@ -1,18 +1,17 @@
-#include<iostream>
-#include<stack>
+#include"stack.h"
 using namespace std;
 int main(){
-    stack<int>st;
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.pop();
-    st.push(4);
-    st.push(5);
-    st.push(6);
-    cout << "Size of stack : " << st.size() << endl;
-    while(!st.empty()){
-        cout << st.top() << " ";
-        st.pop();
-    }
+    int st[n];
+    int top = -1;
+    push(st,top,10);
+    push(st,top,20);
+    push(st,top,30);
+    push(st,top,40);
+    pop();
+    push(st,top,50);
+    pop(st,top);
+    push(st,top,60);
+    push(st,top,70);
+    pop();
+    display(st,top);
 }
